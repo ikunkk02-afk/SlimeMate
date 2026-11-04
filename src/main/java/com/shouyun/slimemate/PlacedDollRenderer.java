@@ -38,6 +38,6 @@ final class PlacedDollRenderer extends EntityRenderer<PlacedDoll> {
 
     @Override
     public ResourceLocation getTextureLocation(PlacedDoll doll) {
-        return DollRenderer.DEFAULT_SKIN;
+        return SlimeMateClient.dollRenderer().defaultTexture();
     }
 }
