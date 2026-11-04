@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [" S ", "SSS", "S S"],
+  "key": { "S": { "item": "minecraft:slime_ball" } },
+  "result": { "id": "slimemate:slime_cup", "count": 1 }
+}

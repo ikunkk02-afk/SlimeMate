@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_slime_cup": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": "slimemate:slime_cup" }] }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": { "recipe": "slimemate:slime_doll" }
+    }
+  },
+  "requirements": [["has_slime_cup", "has_the_recipe"]],
+  "rewards": { "recipes": ["slimemate:slime_doll"] }
+}

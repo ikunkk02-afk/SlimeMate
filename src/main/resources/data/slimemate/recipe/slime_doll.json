@@ -1,0 +1,10 @@
+{
+  "type": "slimemate:doll_upgrade",
+  "category": "misc",
+  "pattern": [" W ", "WCW", "W W"],
+  "key": {
+    "W": { "tag": "minecraft:wool" },
+    "C": { "item": "slimemate:slime_cup" }
+  },
+  "result": { "id": "slimemate:slime_doll", "count": 1 }
+}

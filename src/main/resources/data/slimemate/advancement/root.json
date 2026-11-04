@@ -1,0 +1,16 @@
+{
+  "display": {
+    "icon": { "id": "slimemate:slime_cup" },
+    "title": { "translate": "advancement.slimemate.first_use.title" },
+    "description": { "translate": "advancement.slimemate.first_use.description" },
+    "background": "minecraft:textures/block/slime_block.png",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "use_cup": {
+      "trigger": "minecraft:consume_item",
+      "conditions": { "item": { "items": "slimemate:slime_cup" } }
+    }
+  }
+}

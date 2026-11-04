@@ -1,0 +1,16 @@
+{
+  "parent": "slimemate:root",
+  "display": {
+    "icon": { "id": "slimemate:slime_doll" },
+    "title": { "translate": "advancement.slimemate.better_experience.title" },
+    "description": { "translate": "advancement.slimemate.better_experience.description" },
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "craft_doll": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": { "recipe_id": "slimemate:slime_doll" }
+    }
+  }
+}
