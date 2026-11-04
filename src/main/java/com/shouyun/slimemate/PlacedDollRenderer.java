@@ -2,7 +2,6 @@ package com.shouyun.slimemate;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
@@ -27,11 +26,6 @@ final class PlacedDollRenderer extends EntityRenderer<PlacedDoll> {
             pose.scale(0.60F, 0.60F, 0.60F);
             SlimeMateClient.dollRenderer().renderModel(stack, pose, buffers, light, OverlayTexture.NO_OVERLAY);
             pose.popPose();
-            var viewer = Minecraft.getInstance().player;
-            if (viewer != null && entityRenderDispatcher.distanceToSqr(doll) <= 64.0 && viewer.hasLineOfSight(doll)) {
-                var history = stack.getOrDefault(SlimeMate.USE_HISTORY.get(), ItemUseHistory.EMPTY);
-                renderNameTag(doll, history.display(), pose, buffers, light, partialTick);
-            }
         }
         super.render(doll, yaw, partialTick, pose, buffers, light);
     }
